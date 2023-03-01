@@ -1,6 +1,6 @@
 -- My Ada micro-project to self study programing
 -- Mathematic calculater (2D_Geomatic Area calculator)
--- Developed by Santisuk
+-- Deverloped by Santisuk
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
@@ -51,7 +51,7 @@ begin
 
    loop
 
-      
+      --N := range 0..2 ;
 
       Put("Enter the vavule");
       Get(N);
@@ -62,8 +62,7 @@ begin
       case N is
 
          when 0 =>
-            
-            --calculate to retangle
+
             Put_Line("Pless Insert Length");
             Get(L);
             Put_Line("Pless Insert Width");
@@ -71,8 +70,7 @@ begin
             Put_Line("You Retangle area is"& Float'Image(L*W));
 
          when 1 =>
-            
-            --calculate to triangle
+
             Put_Line("Pless Insert Base");
             Get(B);
             Put_Line("Pless Insert Height");
@@ -81,13 +79,11 @@ begin
 
          when 2 =>
 
-            --calculate to circule
             Put_Line("Pless Insert Radius");
             Get(R);
             Put_Line("You Circule area appoximate is"& Float'Image(Pi*(R*R)));
          when others =>
 
-            --exit program
             Put_Line("Pless any key to exit");
             exit;
 
